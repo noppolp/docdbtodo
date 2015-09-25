@@ -25,7 +25,7 @@ namespace Todo.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Create([Bind(Include = "Id,Name,Description,Completed")] Item item)
+        public async Task<ActionResult> Create([Bind(Include = "Id,Name,Desc,Completed")] Item item)
         {
             if (ModelState.IsValid)
             {
@@ -38,7 +38,7 @@ namespace Todo.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Edit([Bind(Include = "Id,Name,Description,Completed")] Item item)
+        public async Task<ActionResult> Edit([Bind(Include = "Id,Name,Desc,Completed")] Item item)
         {
             if (ModelState.IsValid)
             {
