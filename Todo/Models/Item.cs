@@ -19,6 +19,6 @@ namespace Todo.Models
         public string Desc { get; set; }
 
         [JsonProperty(PropertyName = "isComplete")]
-        public string Completed { get; set; }
+        public bool Completed { get; set; }
     }
 }
